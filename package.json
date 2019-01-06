@@ -1,0 +1,18 @@
+{
+  "name": "@evanpurkhiser/eslint-config",
+  "version": "0.1.0",
+  "description": "Evan Purkhiser's personal eslint configuration",
+  "main": "index.js",
+  "repository": "https://github.com/EvanPurkhiser/eslint-config",
+  "author": "Evan Purkhiser",
+  "license": "MIT",
+  "dependencies": {
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.3"
+  },
+  "perrDependnecies": {
+    "eslint": ">=5.0.0",
+    "prettier": ">=1.0.0"
+  }
+}
