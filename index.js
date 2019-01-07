@@ -5,7 +5,7 @@ module.exports = {
     'prettier',
     'prettier/react',
   ],
-  plugins: ['react', 'prettier'],
+  plugins: ['react', 'prettier', 'babel'],
   parser: 'babel-eslint',
 
   parserOptions: {
@@ -26,7 +26,6 @@ module.exports = {
     'no-extra-label': ['error'],
     'no-floating-decimal': ['error'],
     'no-implied-eval': ['error'],
-    'no-invalid-this': ['error'],
     'no-lone-blocks': ['error'],
     'no-return-await': ['error'],
     'no-self-compare': ['error'],
@@ -51,7 +50,6 @@ module.exports = {
     'new-parens': ['error'],
     'padded-blocks': ['warn', 'never'],
     'spaced-comment': ['warn', 'always'],
-    camelcase: ['warn'],
 
     // ECMA 6
     'no-useless-constructor': ['warn'],
@@ -72,5 +70,9 @@ module.exports = {
     'react/prefer-stateless-function': ['warn'],
     'react/jsx-boolean-value': ['warn'],
     'react/jsx-pascal-case': ['warn'],
+
+    // Babel rules (for newer syntax)
+    'babel/no-invalid-this': ['warn'],
+    'babel/camelcase': ['warn'],
   },
 };

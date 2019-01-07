@@ -1,6 +1,6 @@
 {
   "name": "@evanpurkhiser/eslint-config",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Evan Purkhiser's personal eslint configuration",
   "main": "index.js",
   "repository": "https://github.com/EvanPurkhiser/eslint-config",
@@ -9,6 +9,7 @@
   "dependencies": {
     "babel-eslint": "^10.0.1",
     "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.3"
   },

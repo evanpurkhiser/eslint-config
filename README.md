@@ -7,10 +7,10 @@ projects.
 yarn install -D @evanpurkihser/eslint-config
 ```
 
-Create a `.eslintrc` file with the contents:
+Create a `.eslintrc.js` file with the contents:
 
-```json
-{
-  "extends": ["@evanpurkhiser"]
-}
+```js
+module.exports = {
+  extends: ['@evanpurkhiser'],
+};
 ```
