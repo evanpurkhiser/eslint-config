@@ -46,7 +46,7 @@ module.exports = {
     // Style (mostly handled by prettier)
     'capitalized-comments': ['warn'],
     'eol-last': ['error', 'always'],
-    'line-comment-position': ["error", { "position": "above" }]
+    'line-comment-position': ['error', { position: 'above' }],
     'new-cap': ['error'],
     'new-parens': ['error'],
     'padded-blocks': ['warn', 'never'],
@@ -66,7 +66,7 @@ module.exports = {
 
     // React
     'react/boolean-prop-naming': ['warn'],
-    'react/default-props-match-prop-types': ['warn']
+    'react/default-props-match-prop-types': ['warn'],
     'react/destructuring-assignment': ['warn'],
     'react/no-access-state-in-setstate': ['warn'],
     'react/no-this-in-sfc': ['warn'],

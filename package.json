@@ -1,6 +1,6 @@
 {
   "name": "@evanpurkhiser/eslint-config",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Evan Purkhiser's personal eslint configuration",
   "main": "index.js",
   "repository": "https://github.com/EvanPurkhiser/eslint-config",
@@ -11,8 +11,8 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.3"
   },
-  "perrDependnecies": {
-    "eslint": ">=5.0.0",
+  "peerDependencies": {
+    "eslint": ">=3.0.0",
     "prettier": ">=1.0.0"
   }
 }
