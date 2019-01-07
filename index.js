@@ -17,7 +17,7 @@ module.exports = {
 
   rules: {
     // Best practices
-    'array-callback-return': ['error', 'always'],
+    'array-callback-return': ['warn'],
     'class-methods-use-this': ['warn'],
     'consistent-return': ['warn'],
     'no-caller': ['warn'],
