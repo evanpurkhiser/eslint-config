@@ -6,6 +6,7 @@ module.exports = {
     'prettier/react',
   ],
   plugins: ['react', 'prettier'],
+  parser: 'babel-eslint',
 
   parserOptions: {
     ecmaVersion: 6,
@@ -37,17 +38,16 @@ module.exports = {
     'require-await': ['warn'],
     curly: ['error'],
     eqeqeq: ['error'],
-    radix: ['wran'],
+    radix: ['warn'],
 
     // Variables
+    'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     'no-undef-init': ['warn'],
     'no-undefined': ['warn'],
 
     // Style (mostly handled by prettier)
-    'capitalized-comments': ['warn'],
     'eol-last': ['error', 'always'],
     'line-comment-position': ['error', { position: 'above' }],
-    'new-cap': ['error'],
     'new-parens': ['error'],
     'padded-blocks': ['warn', 'never'],
     'spaced-comment': ['warn', 'always'],
@@ -67,12 +67,10 @@ module.exports = {
     // React
     'react/boolean-prop-naming': ['warn'],
     'react/default-props-match-prop-types': ['warn'],
-    'react/destructuring-assignment': ['warn'],
     'react/no-access-state-in-setstate': ['warn'],
     'react/no-this-in-sfc': ['warn'],
     'react/prefer-stateless-function': ['warn'],
     'react/jsx-boolean-value': ['warn'],
-    'react/jsx-handler-names)': ['warn'],
     'react/jsx-pascal-case': ['warn'],
   },
 };
