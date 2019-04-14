@@ -5,7 +5,7 @@ module.exports = {
     'prettier',
     'prettier/react',
   ],
-  plugins: ['react', 'prettier', 'babel'],
+  plugins: ['react', 'prettier', 'import', 'babel'],
   parser: 'babel-eslint',
 
   parserOptions: {
@@ -14,6 +14,10 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
+  },
+
+  settings: {
+    react: { version: 'detect' },
   },
 
   rules: {
