@@ -46,7 +46,6 @@ module.exports = {
     // Variables
     'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     'no-undef-init': ['warn'],
-    'no-undefined': ['warn'],
 
     // Style (mostly handled by prettier)
     'eol-last': ['error', 'always'],
