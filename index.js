@@ -64,6 +64,7 @@ module.exports = {
     'prefer-rest-params': ['warn'],
     'prefer-spread': ['warn'],
     'prefer-template': ['warn'],
+    'arrow-body-style': ['error', 'as-needed'],
 
     // React
     'react/boolean-prop-naming': ['warn'],
