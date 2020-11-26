@@ -8,7 +8,7 @@ module.exports = {
     'prettier/react',
     'prettier/@typescript-eslint',
   ],
-  plugins: ['react', 'prettier', 'import', '@typescript-eslint'],
+  plugins: ['react', 'prettier', 'import', '@typescript-eslint', 'simple-import-sort'],
   parser: '@typescript-eslint/parser',
 
   parserOptions: {
@@ -65,8 +65,7 @@ module.exports = {
     'arrow-body-style': ['error', 'as-needed'],
 
     // React
-    'react/boolean-prop-naming': ['warn'],
-    'react/default-props-match-prop-types': ['warn'],
+    'react/prop-types': ['off'],
     'react/no-access-state-in-setstate': ['warn'],
     'react/no-this-in-sfc': ['warn'],
     'react/prefer-stateless-function': ['warn'],
@@ -87,5 +86,27 @@ module.exports = {
 
     // see: https://github.com/typescript-eslint/typescript-eslint/issues/420
     '@typescript-eslint/no-useless-constructor': 'error',
+
+    // Sort imports
+    'simple-import-sort/exports': 'error',
+    'simple-import-sort/imports': [
+      'error',
+      {
+        groups: [
+          // Side effect imports.
+          ['^\\u0000'],
+          // Packages. `react` related packages come first.
+          ['^react', '^@?\\w'],
+          // Node.js builtins.
+          [`^(${require('module').builtinModules.join('|')})(/|$)`],
+          // Internal packages.
+          ['^(src|app)(/.*|$)'],
+          // Parent imports. Put `..` last.
+          ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
+          // Other relative imports. Put same-folder imports and `.` last.
+          ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
+        ],
+      },
+    ],
   },
 };
