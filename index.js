@@ -66,6 +66,7 @@ module.exports = {
 
     // React
     'react/prop-types': ['off'],
+    'react/display-name': ['off'],
     'react/no-access-state-in-setstate': ['warn'],
     'react/no-this-in-sfc': ['warn'],
     'react/prefer-stateless-function': ['warn'],
