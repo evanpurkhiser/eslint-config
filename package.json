@@ -1,6 +1,6 @@
 {
   "name": "@evanpurkhiser/eslint-config",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "description": "Evan Purkhiser's personal eslint configuration",
   "main": "index.js",
   "repository": "https://github.com/evanpurkhiser/eslint-config",
