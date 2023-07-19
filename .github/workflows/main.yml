@@ -10,7 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: volta-cli/action@v4
-      - run: yarn install
       - name: bump version
         run: |
           git config user.name "GitHub Actions"
