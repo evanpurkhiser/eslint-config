@@ -2,7 +2,7 @@ name: publish
 
 on:
   push:
-    tags: ['v*']
+    branches: [main]
 
 jobs:
   publish:
@@ -10,5 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: volta-cli/action@v4
+      - run: yarn install
+      - name: bump version
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "<>"
+          yarn version --minor --force
+          git push
       - run: npm set //registry.npmjs.org/:_authToken ${{ secrets.NPM_AUTH_TOKEN }}
       - run: npm publish --access=public
