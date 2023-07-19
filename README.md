@@ -1,6 +1,7 @@
 ## Evan Purkhiser's Personal JS code styles
 
 [![publish](https://github.com/evanpurkhiser/eslint-config/workflows/publish/badge.svg)](https://github.com/evanpurkhiser/eslint-config/actions?query=workflow%3Apublish)
+[![NPM](https://img.shields.io/npm/v/@evanpurkhiser/eslint-config)](https://www.npmjs.com/package/@evanpurkhiser/eslint-config)
 
 These are my eslint configurations that I use across my various personal
 projects.
