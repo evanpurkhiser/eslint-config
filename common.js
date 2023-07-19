@@ -72,6 +72,9 @@ module.exports = {
     // see: https://github.com/typescript-eslint/typescript-eslint/issues/420
     '@typescript-eslint/no-useless-constructor': 'error',
 
+    // Consistent Array<T> / T[] usage
+    '@typescript-eslint/no-useless-constructor': ['error', {default: 'array-simple'}],
+
     // Sort imports
     'simple-import-sort/exports': 'error',
     'simple-import-sort/imports': [
