@@ -7,15 +7,15 @@ These are my eslint configurations that I use across my various personal
 projects.
 
 ```
-yarn install -D @evanpurkihser/eslint-config
+yarn install -D @evanpurkhiser/eslint-config
 ```
 
-Create a `.eslintrc.js` file with the contents:
+Create a `eslint.config.mjs` file with the contents:
 
 ```js
-module.exports = {
-  extends: ['@evanpurkhiser'],
-};
+import {all} from '@evanpurkhiser/eslint-config';
+
+export defaukt [...all];
 ```
 
 The default configuration is for React apps, but you can select from the
@@ -27,7 +27,7 @@ following configurations
 For example:
 
 ```js
-module.exports = {
-  extends: ['@evanpurkhiser/eslint-config/common'],
-};
+import {common} from '@evanpurkhiser/eslint-config';
+
+export defaukt [...common];
 ```
