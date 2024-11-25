@@ -6,6 +6,7 @@ import tseslint from 'typescript-eslint';
 const react = tseslint.config(
   reactPlugin.configs.flat.recommended,
   reactPlugin.configs.flat['jsx-runtime'],
+  reactHooksPlugin.configs.recommended,
 
   {
     plugins: {
