@@ -6,7 +6,6 @@ import tseslint from 'typescript-eslint';
 const react = tseslint.config(
   reactPlugin.configs.flat.recommended,
   reactPlugin.configs.flat['jsx-runtime'],
-  reactHooksPlugin.configs.recommended,
 
   {
     plugins: {
@@ -31,6 +30,9 @@ const react = tseslint.config(
     },
 
     rules: {
+      // XXX: Hack while we wait for flat config support in the hooks plugin
+      // https://github.com/facebook/react/pull/30774
+      ...reactHooksPlugin.configs.recommended.rules,
       'react/prop-types': ['off'],
       'react/display-name': ['off'],
       'react/no-access-state-in-setstate': ['warn'],
