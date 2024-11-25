@@ -15,7 +15,7 @@ Create a `eslint.config.mjs` file with the contents:
 ```js
 import {all} from '@evanpurkhiser/eslint-config';
 
-export defaukt [...all];
+export default [...all];
 ```
 
 The default configuration is for React apps, but you can select from the
@@ -29,5 +29,5 @@ For example:
 ```js
 import {common} from '@evanpurkhiser/eslint-config';
 
-export defaukt [...common];
+export default [...common];
 ```
