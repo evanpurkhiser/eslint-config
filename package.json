@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "@evanpurkhiser/eslint-config",
   "version": "0.25.0",
   "description": "Evan Purkhiser's personal eslint configuration",
